@@ -1,0 +1,24 @@
+task-xfce-desktop
+task-print-server
+ratpoison
+vim
+mc
+git
+xvnc4viewer
+chromium-browser 
+xchat
+nmap
+libv8-dev
+ntpdate
+mongodb
+
+#nif DISTRIBUTION wheezy
+	plymouth plymouth-drm plymouth-x11
+#endif
+
+# see: http://wiki.debian.org/plymouth
+# Ati 
+drm
+radeon modeset=1
+	
+#gstreamer-vaapi

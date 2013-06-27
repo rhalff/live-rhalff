@@ -3,4 +3,10 @@
 set -e
 
 lb config noauto \
-	"${@}"
+     --architectures amd64 \
+     --linux-flavours amd64 \
+     --binary-images hdd \
+     --linux-packages "linux-image linux-headers" \
+     --mirror-bootstrap http://ftp.nl.debian.org/debian/ \
+     --mirror-binary http://ftp.nl.debian.org/debian/ \
+     "${@}"
